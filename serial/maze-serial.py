@@ -10,7 +10,7 @@ import time
 global GRAPH_SIZE, CELL_THICKNESS, WALL_THICKNESS
 
 ## Maze generation parameters. Change as desired.
-GRAPH_SIZE = 1000
+GRAPH_SIZE = 200
 CELL_THICKNESS = 20
 WALL_THICKNESS = 5
 
@@ -88,8 +88,8 @@ def bfs_solve(maze, start, end, nodes):
     path.reverse()
     
     t_end = time.perf_counter()
-    elapsed = (t_end - t_start)
-    print(f"Solve time: {elapsed} ms")
+    elapsed = t_end - t_start
+    print(f"Serial solve time: {elapsed} s")
 
     return path
 
