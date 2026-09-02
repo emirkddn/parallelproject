@@ -2,8 +2,6 @@
 
 Small project for a parallel programming assignment. Generates a random maze with Kruskal's algorithm, then solves it with BFS, comparing a plain serial solve against a threaded version and a multiprocessing version to see if either one actually helps.
 
-![solved maze](solved_maze.png)
-
 ## What's here
 
 - `serial/maze-serial.py` - baseline, generates a maze and solves it with normal BFS, no concurrency at all.
