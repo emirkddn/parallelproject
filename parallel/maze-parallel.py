@@ -89,7 +89,7 @@ def bfs_solve_parallel(maze, start, end, nodes):
             found[0] = True
             break
         # Parallel exploration of neighbors
-        with ThreadPoolExecutor(max_workers=10) as executor:
+        with ThreadPoolExecutor(max_workers=32) as executor:
             executor.submit(explore_neighbors, current)
     
     if not found[0]:
